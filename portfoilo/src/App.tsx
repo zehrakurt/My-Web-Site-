@@ -498,20 +498,20 @@ function App() {
 
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Mobil Uygulama Projesi</h3>
+                  <h3>FitCart E-Commerce</h3>
                   <p>
-                    React Native ile geliştirilen, iOS ve Android'de çalışan kullanıcı odaklı mobil uygulama.
+                  Sporcu gıdaları ve vitamin satışı için tasarlanmış kapsamlı bir B2C e-ticaret web uygulamasıdır. İçerisinde güvenli üyelik sistemi, detaylı ürün filtreleme, varyantlı (aroma/boyut) sepet yönetimi ve müşteri yorumları gibi gerçek dünya senaryolarına uygun gelişmiş e-ticaret akışları barındırmaktadır.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">React Native</span>
+                    <span className="tech">React</span>
                     <span className="tech">TypeScript</span>
-                    <span className="tech">Expo</span>
+                    <span className="tech">Tailwind CSS</span>
                   </div>
                   <div className="project-links">
-                    <a href="#">
+                    <a href="https://nutrition61.netlify.app/">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/zehrakurt/final-project.git">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
