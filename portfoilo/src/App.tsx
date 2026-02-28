@@ -520,22 +520,21 @@ function App() {
 
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Portfolyo Şablonu</h3>
+                  <h3>Sürücü Kursu Tanıtım Web Sitesi</h3>
                   <p>
-                    3D animasyonlar ve karanlık mod ile geliştiriciler için özelleştirilebilir
-                    portfolyo şablonu.
+                  Bursa merkezli bir sürücü kursu için tek sayfalık, kurumsal tanıtım sitesi. Anasayfa, hakkımızda, ehliyet sınıfları, öğrenci yorumları, sık sorulan sorular ve iletişim formu ile birlikte YouTube direksiyon eğitimi videosu entegrasyonu içerir. Tamamen responsive tasarım, mobilde hamburger menü ve görsel/içerik düzenlemeleriyle tüm cihazlarda kullanılabilir.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">HTML/CSS</span>
-                    <span className="tech">JavaScript</span>
-                    <span className="tech">Three.js</span>
-                    <span className="tech">GSAP</span>
+                    <span className="tech">React</span>
+                    <span className="tech">Vite</span>
+                    <span className="tech">React-icons</span>
+                    <span className="tech">CSS Animations</span>
                   </div>
                   <div className="project-links">
-                    <a href="#">
+                    <a href="https://lidersurucukursu.netlify.app/">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/zehrakurt/surucu-kursu-tan-t-m.git">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
