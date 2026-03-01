@@ -508,10 +508,10 @@ function App() {
                     <span className="tech">Tailwind CSS</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://nutrition61.netlify.app/">
+                    <a href="https://nutrition61.netlify.app/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/final-project.git">
+                    <a href="https://github.com/zehrakurt/final-project.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
@@ -531,10 +531,10 @@ function App() {
                     <span className="tech">CSS Animations</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://lidersurucukursu.netlify.app/">
+                    <a href="https://lidersurucukursu.netlify.app/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/surucu-kursu-tan-t-m.git">
+                    <a href="https://github.com/zehrakurt/surucu-kursu-tan-t-m.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
@@ -543,20 +543,20 @@ function App() {
 
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Görev Yönetim Uygulaması</h3>
+                  <h3>Modern Mimarlık Firması Web Arayüzü</h3>
                   <p>
-                    Sürükle-bırak ve ekip iş birliği özellikleriyle görev yönetimi uygulaması.
+                  Mimarlık ve mobilya alanında hizmet veren bir firma için responsive ve modern bir tanıtım web sitesi tasarlayıp geliştirdim. Projede sürdürülebilirlik teması, ürün özellikleri bölümü ve kullanıcı odaklı arayüz tasarımı ön planda tutuldu.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">Vue.js</span>
-                    <span className="tech">Firebase</span>
-                    <span className="tech">Tailwind CSS</span>
+                    <span className="tech">Html</span>
+                    <span className="tech">Css</span>
+                    <span className="tech">Bootstrap</span>
                   </div>
                   <div className="project-links">
-                    <a href="#">
+                    <a href="https://second-projectt-kappa.vercel.app/"  target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/zehrakurt/second-projectt.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
@@ -573,13 +573,13 @@ function App() {
                   <div className="project-tech">
                     <span className="tech">React</span>
                     <span className="tech">OpenWeather API</span>
-                    <span className="tech">Chart.js</span>
+                    <span className="tech">Three.js</span>
                   </div>
                   <div className="project-links">
-                    <a href="#">
+                    <a href="https://weather-app-61.netlify.app/">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="#">
+                    <a href="https://github.com/zehrakurt/weather-app.git">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
