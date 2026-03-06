@@ -576,10 +576,10 @@ function App() {
                     <span className="tech">Three.js</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://weather-app-61.netlify.app/">
+                    <a href="https://weather-app-61.netlify.app/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/weather-app.git">
+                    <a href="https://github.com/zehrakurt/weather-app.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
