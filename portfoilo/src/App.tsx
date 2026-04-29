@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     if (!canvasContainerRef.current) return;
 
- 
+
     try {
       const testCanvas = document.createElement('canvas');
       const gl =
@@ -49,7 +49,7 @@ function App() {
 
     console.log('[Three] init start');
 
- 
+
     canvasContainerRef.current.innerHTML = '';
 
     const scene = new THREE.Scene();
@@ -148,7 +148,7 @@ function App() {
         try {
           canvasContainerRef.current.removeChild(rendererRef.current.domElement);
         } catch {
-     
+
         }
       }
       rendererRef.current?.dispose();
@@ -169,7 +169,7 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
- 
+
   useEffect(() => {
     const handleSmoothScroll = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -246,16 +246,19 @@ function App() {
     setFormStatus('loading');
     setFormError('');
 
-
     try {
-      const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+      const response = await fetch('https://formsubmit.co/ajax/zehrakurrt7@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message
+          Ad: formData.name,
+          Email: formData.email,
+          Konu: formData.subject,
+          Mesaj: formData.message,
+          _captcha: "false"
         })
       });
 
@@ -263,9 +266,8 @@ function App() {
         setFormStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        const data = await response.json().catch(() => ({}));
         setFormStatus('error');
-        setFormError(data.error || 'Gönderim sırasında bir hata oluştu.');
+        setFormError('Gönderim sırasında bir hata oluştu.');
       }
     } catch {
       setFormStatus('error');
@@ -288,7 +290,7 @@ function App() {
                 <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
               </div>
               <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-             
+
                 <li>
                   <a href="#home">Ana Sayfa</a>
                 </li>
@@ -323,8 +325,7 @@ function App() {
                 {heroText.length < HERO_FULL.length && <span className="cursor">|</span>}
               </h1>
               <p>
-              Modern web teknolojileri ve React Native ile
-              mobil platformlarda kullanıcı odaklı, işlevsel projeler geliştiriyorum.
+                Modern web teknolojileri ve React Native ile işinize özel, kullanıcı odaklı ve yüksek performanslı web/mobil uygulamalar geliştiriyorum. Özel yazılım projeleriniz ve e-ticaret çözümleriniz için profesyonel destek sağlıyorum.
               </p>
               <a href="#contact" className="btn">
                 İletişime Geç
@@ -473,34 +474,35 @@ function App() {
           <div className="container">
             <h2 className="section-title">Projelerim</h2>
             <div className="projects-grid">
+
               <div className="project-card">
                 <div className="project-content">
-                  <h3>İsterim Kooperatif Tanıtım Sitesi</h3>
+                  <h3>Doliva Çikolata</h3>
                   <p>
-                  Kullanıcıların kooperatifin yapısı ve faaliyetleri hakkında kolayca bilgi edinebilmesini hedefleyen, içerik odaklı bir tanıtım sitesidir.
+                    Lüks çikolata markası için geliştirilmiş, estetik ve kullanıcı deneyimi odaklı e-ticaret arayüzü. Modern tasarım prensipleriyle markanın prestijini ön plana çıkaran, hızlı ve responsive bir web platformu.
                   </p>
                   <div className="project-tech">
                     <span className="tech">React</span>
-                    <span className="tech">TypeScript</span>
-                    <span className="tech">Vite</span>
-                    <span className="tech">Css</span>
+                    <span className="tech">Next.js</span>
+                    <span className="tech">Tailwind Css</span>
                   </div>
                   <div className="project-links">
-                    <a   href="https://isterimkoop.org.tr/" target="_blank">
+                    <a href="https://dolivacikolata.com/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/isterim_koop.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/my-app.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
                 </div>
               </div>
 
+
               <div className="project-card">
                 <div className="project-content">
                   <h3>FitCart E-Commerce</h3>
                   <p>
-                  Sporcu gıdaları ve vitamin satışı için tasarlanmış kapsamlı bir B2C e-ticaret web uygulamasıdır. İçerisinde güvenli üyelik sistemi, detaylı ürün filtreleme, varyantlı (aroma/boyut) sepet yönetimi ve müşteri yorumları gibi gerçek dünya senaryolarına uygun gelişmiş e-ticaret akışları barındırmaktadır.
+                    Sporcu gıdaları ve vitamin satışı için tasarlanmış kapsamlı bir B2C e-ticaret web uygulamasıdır. İçerisinde güvenli üyelik sistemi, detaylı ürün filtreleme, varyantlı (aroma/boyut) sepet yönetimi ve müşteri yorumları gibi gerçek dünya senaryolarına uygun gelişmiş e-ticaret akışları barındırmaktadır.
                   </p>
                   <div className="project-tech">
                     <span className="tech">React</span>
@@ -522,7 +524,7 @@ function App() {
                 <div className="project-content">
                   <h3>Sürücü Kursu Tanıtım Web Sitesi</h3>
                   <p>
-                  Bursa merkezli bir sürücü kursu için tek sayfalık, kurumsal tanıtım sitesi. Anasayfa, hakkımızda, ehliyet sınıfları, öğrenci yorumları, sık sorulan sorular ve iletişim formu ile birlikte YouTube direksiyon eğitimi videosu entegrasyonu içerir. Tamamen responsive tasarım, mobilde hamburger menü ve görsel/içerik düzenlemeleriyle tüm cihazlarda kullanılabilir.
+                    Bursa merkezli bir sürücü kursu için tek sayfalık, kurumsal tanıtım sitesi. Anasayfa, hakkımızda, ehliyet sınıfları, öğrenci yorumları, sık sorulan sorular ve iletişim formu ile birlikte YouTube direksiyon eğitimi videosu entegrasyonu içerir. Tamamen responsive tasarım, mobilde hamburger menü ve görsel/içerik düzenlemeleriyle tüm cihazlarda kullanılabilir.
                   </p>
                   <div className="project-tech">
                     <span className="tech">React</span>
@@ -543,43 +545,41 @@ function App() {
 
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Modern Mimarlık Firması Web Arayüzü</h3>
-                  <p>
-                  Mimarlık ve mobilya alanında hizmet veren bir firma için responsive ve modern bir tanıtım web sitesi tasarlayıp geliştirdim. Projede sürdürülebilirlik teması, ürün özellikleri bölümü ve kullanıcı odaklı arayüz tasarımı ön planda tutuldu.
+                  <h3>Veteriner Kliniği Web Sitesi</h3>
+                  <p>Evcil hayvan sahiplerinin online randevu alabileceği, klinik hizmetlerini inceleyebileceği ve uzman kadro hakkında bilgi edinebileceği modern bir veteriner kliniği platformu. Kullanıcı deneyimi (UX) ön planda tutularak,mobil uyumlu bir arayüz ile geliştirildi.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">Html</span>
-                    <span className="tech">Css</span>
-                    <span className="tech">Bootstrap</span>
+                    <span className="tech">TypeScript</span>
+                    <span className="tech">Next.js</span>
+                    <span className="tech">Tailwind CSS</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://second-projectt-kappa.vercel.app/"  target="_blank">
+                    <a href="https://vet-clinic-site.netlify.app/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/second-projectt.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/vet-clinic.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
                 </div>
               </div>
-
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Hava Durumu Paneli</h3>
+                  <h3>İsterim Kooperatif Tanıtım Sitesi</h3>
                   <p>
-                    Çeşitli API'lerden veri alarak anlık durum ve tahminleri gösteren hava durumu
-                    uygulaması.
+                    Kullanıcıların kooperatifin yapısı ve faaliyetleri hakkında kolayca bilgi edinebilmesini hedefleyen, içerik odaklı bir tanıtım sitesidir.
                   </p>
                   <div className="project-tech">
                     <span className="tech">React</span>
-                    <span className="tech">OpenWeather API</span>
-                    <span className="tech">Three.js</span>
+                    <span className="tech">TypeScript</span>
+                    <span className="tech">Vite</span>
+                    <span className="tech">Css</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://weather-app-61.netlify.app/" target="_blank">
+                    <a href="https://isterimkoop.org.tr/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/weather-app.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/isterim_koop.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
@@ -624,7 +624,7 @@ function App() {
                   </div>
                 </div>
 
-             
+
               </div>
 
               <div className="contact-form">
@@ -681,15 +681,15 @@ function App() {
                   </div>
 
                   {formStatus === 'success' && (
-                  <p className="form-success">
-                    <i className="fas fa-check-circle"></i> Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.
-                  </p>
-                )}
-                {formStatus === 'error' && (
-                  <p className="form-error">
-                    <i className="fas fa-exclamation-circle"></i> {formError}
-                  </p>
-                )}
+                    <p className="form-success">
+                      <i className="fas fa-check-circle"></i> Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.
+                    </p>
+                  )}
+                  {formStatus === 'error' && (
+                    <p className="form-error">
+                      <i className="fas fa-exclamation-circle"></i> {formError}
+                    </p>
+                  )}
                   <button type="submit" className="btn" disabled={formStatus === 'loading'}>
                     {formStatus === 'loading' ? (
                       <>
@@ -708,13 +708,13 @@ function App() {
         <footer>
           <div className="container">
             <div className="social-links">
-              <a href="https://github.com/zehrakurt" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/zehrakurt" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub Profilim">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/zehrakurrtt/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/zehrakurrtt/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn Profilim">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" className="social-link">
+              <a href="#" className="social-link" aria-label="Dribbble Profilim">
                 <i className="fab fa-dribbble"></i>
               </a>
             </div>
