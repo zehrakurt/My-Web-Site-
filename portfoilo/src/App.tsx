@@ -5,7 +5,6 @@ import './App.css';
 const HERO_PREFIX = 'Merhaba, ben ';
 const HERO_NAME = 'Zehra Kurt';
 const HERO_FULL = HERO_PREFIX + HERO_NAME;
-const FORMSPREE_FORM_ID = 'xeezendj';
 
 
 function App() {
