@@ -5,6 +5,7 @@ import './App.css';
 const HERO_PREFIX = 'Merhaba, ben ';
 const HERO_NAME = 'Zehra Kurt';
 const HERO_FULL = HERO_PREFIX + HERO_NAME;
+const FORMSPREE_FORM_ID = 'xeezendj';
 
 
 function App() {
@@ -245,19 +246,16 @@ function App() {
     setFormStatus('loading');
     setFormError('');
 
+
     try {
-      const response = await fetch('https://formsubmit.co/ajax/zehrakurrt7@gmail.com', {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
         method: 'POST',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-          Ad: formData.name,
-          Email: formData.email,
-          Konu: formData.subject,
-          Mesaj: formData.message,
-          _captcha: "false"
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
         })
       });
 
@@ -265,8 +263,9 @@ function App() {
         setFormStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
+        const data = await response.json().catch(() => ({}));
         setFormStatus('error');
-        setFormError('Gönderim sırasında bir hata oluştu.');
+        setFormError(data.error || 'Gönderim sırasında bir hata oluştu.');
       }
     } catch {
       setFormStatus('error');
@@ -324,7 +323,8 @@ function App() {
                 {heroText.length < HERO_FULL.length && <span className="cursor">|</span>}
               </h1>
               <p>
-                Modern web teknolojileri ve React Native ile işinize özel, kullanıcı odaklı ve yüksek performanslı web/mobil uygulamalar geliştiriyorum. Özel yazılım projeleriniz ve e-ticaret çözümleriniz için profesyonel destek sağlıyorum.
+                Modern web teknolojileri ve React Native ile
+                mobil platformlarda kullanıcı odaklı, işlevsel projeler geliştiriyorum.
               </p>
               <a href="#contact" className="btn">
                 İletişime Geç
@@ -470,6 +470,7 @@ function App() {
         </section>
 
         <section id="projects" className="section">
+
           <div className="container">
             <h2 className="section-title">Projelerim</h2>
             <div className="projects-grid">
@@ -478,12 +479,12 @@ function App() {
                 <div className="project-content">
                   <h3>Doliva Çikolata</h3>
                   <p>
-                    Lüks çikolata markası için geliştirilmiş, estetik ve kullanıcı deneyimi odaklı e-ticaret arayüzü. Modern tasarım prensipleriyle markanın prestijini ön plana çıkaran, hızlı ve responsive bir web platformu.
+                    Lüks ve el yapımı çikolata markası Doliva için geliştirilmiş, yüksek performanslı ve kullanıcı odaklı bir tanıtım ve vitrin platformudur. Markanın zarafetini dijital dünyaya taşırken, modern teknolojilerle kusursuz bir kullanıcı deneyimi hedeflenmiştir.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">React</span>
                     <span className="tech">Next.js</span>
                     <span className="tech">Tailwind Css</span>
+                    <span className="tech">Typescript</span>
                   </div>
                   <div className="project-links">
                     <a href="https://dolivacikolata.com/" target="_blank">
@@ -495,7 +496,28 @@ function App() {
                   </div>
                 </div>
               </div>
-
+              <div className="project-card">
+                <div className="project-content">
+                  <h3>İsterim Kooperatif Tanıtım Sitesi</h3>
+                  <p>
+                    Kullanıcıların kooperatifin yapısı ve faaliyetleri hakkında kolayca bilgi edinebilmesini hedefleyen, içerik odaklı bir tanıtım sitesidir.
+                  </p>
+                  <div className="project-tech">
+                    <span className="tech">React</span>
+                    <span className="tech">TypeScript</span>
+                    <span className="tech">Vite</span>
+                    <span className="tech">Css</span>
+                  </div>
+                  <div className="project-links">
+                    <a href="https://isterimkoop.org.tr/" target="_blank">
+                      <i className="fas fa-external-link-alt"></i> Canlı Demo
+                    </a>
+                    <a href="https://github.com/zehrakurt/isterim_koop.git" target="_blank">
+                      <i className="fab fa-github"></i> Kaynak Kod
+                    </a>
+                  </div>
+                </div>
+              </div>
 
               <div className="project-card">
                 <div className="project-content">
@@ -542,43 +564,24 @@ function App() {
                 </div>
               </div>
 
+
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Veteriner Kliniği Web Sitesi</h3>
-                  <p>Evcil hayvan sahiplerinin online randevu alabileceği, klinik hizmetlerini inceleyebileceği ve uzman kadro hakkında bilgi edinebileceği modern bir veteriner kliniği platformu. Kullanıcı deneyimi (UX) ön planda tutularak,mobil uyumlu bir arayüz ile geliştirildi.
-                  </p>
-                  <div className="project-tech">
-                    <span className="tech">TypeScript</span>
-                    <span className="tech">Next.js</span>
-                    <span className="tech">Tailwind CSS</span>
-                  </div>
-                  <div className="project-links">
-                    <a href="https://vet-clinic-site.netlify.app/" target="_blank">
-                      <i className="fas fa-external-link-alt"></i> Canlı Demo
-                    </a>
-                    <a href="https://github.com/zehrakurt/vet-clinic.git" target="_blank">
-                      <i className="fab fa-github"></i> Kaynak Kod
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="project-card">
-                <div className="project-content">
-                  <h3>İsterim Kooperatif Tanıtım Sitesi</h3>
+                  <h3>Hava Durumu Paneli</h3>
                   <p>
-                    Kullanıcıların kooperatifin yapısı ve faaliyetleri hakkında kolayca bilgi edinebilmesini hedefleyen, içerik odaklı bir tanıtım sitesidir.
+                    Çeşitli API'lerden veri alarak anlık durum ve tahminleri gösteren hava durumu
+                    uygulaması.
                   </p>
                   <div className="project-tech">
                     <span className="tech">React</span>
-                    <span className="tech">TypeScript</span>
-                    <span className="tech">Vite</span>
-                    <span className="tech">Css</span>
+                    <span className="tech">OpenWeather API</span>
+                    <span className="tech">Three.js</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://isterimkoop.org.tr/" target="_blank">
+                    <a href="https://weather-app-61.netlify.app/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/isterim_koop.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/weather-app.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
@@ -707,13 +710,13 @@ function App() {
         <footer>
           <div className="container">
             <div className="social-links">
-              <a href="https://github.com/zehrakurt" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub Profilim">
+              <a href="https://github.com/zehrakurt" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/zehrakurrtt/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn Profilim">
+              <a href="https://www.linkedin.com/in/zehrakurrtt/" target="_blank" rel="noopener noreferrer" className="social-link">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" className="social-link" aria-label="Dribbble Profilim">
+              <a href="#" className="social-link">
                 <i className="fab fa-dribbble"></i>
               </a>
             </div>
