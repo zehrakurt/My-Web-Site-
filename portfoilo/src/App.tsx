@@ -564,21 +564,20 @@ function App() {
 
               <div className="project-card">
                 <div className="project-content">
-                  <h3>Hava Durumu Paneli</h3>
+                  <h3>PatiDostu Veteriner Kliniği</h3>
                   <p>
-                    Çeşitli API'lerden veri alarak anlık durum ve tahminleri gösteren hava durumu
-                    uygulaması.
+                    Modern ve kullanıcı dostu bir arayüze sahip, Next.js ile geliştirilmiş kapsamlı bir veteriner kliniği web sitesi.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">React</span>
-                    <span className="tech">OpenWeather API</span>
-                    <span className="tech">Three.js</span>
+                    <span className="tech">Next.js</span>
+                    <span className="tech">Tailwind CSS</span>
+                    <span className="tech">TypeScript</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://weather-app-61.netlify.app/" target="_blank">
+                    <a href="https://vet-clinic-site.netlify.app" target="_blank" rel="noreferrer">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/weather-app.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/vet-clinic.git" target="_blank" rel="noreferrer">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
