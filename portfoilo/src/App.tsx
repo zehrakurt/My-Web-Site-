@@ -323,8 +323,7 @@ function App() {
                 {heroText.length < HERO_FULL.length && <span className="cursor">|</span>}
               </h1>
               <p>
-                Modern web teknolojileri ve React Native ile
-                mobil platformlarda kullanıcı odaklı, işlevsel projeler geliştiriyorum.
+                İşletmeniz veya kişisel markanız için <strong>özel web siteleri</strong> ve <strong>mobil uygulamalar</strong> geliştiriyorum. <strong>Yazılım işi yaptırmak</strong> ve dijital dünyada profesyonel bir iz bırakmak istiyorsanız doğru yerdesiniz.
               </p>
               <a href="#contact" className="btn">
                 İletişime Geç
@@ -344,13 +343,11 @@ function App() {
                   back-end tarafında güzel ve işlevsel web uygulamaları geliştirmeye odaklanıyorum.
                 </p>
                 <p>
-                  Web geliştirme yolculuğuma Full Stack eğitimiyle başladım; modern teknolojilerle
-                  küçük işletme sitelerinden karmaşık web uygulamalarına kadar projeler üzerinde
-                  çalışıyorum.
+                  Web geliştirme yolculuğuma Full Stack eğitimiyle başladım. İster kurumsal web siteleri, ister gelişmiş e-ticaret platformları olsun, <strong>web sitesi yaptırmak</strong> isteyen müşterilerime uçtan uca modern yazılım çözümleri sunuyorum.
                 </p>
                 <p>
                   React Native ile iOS ve Android platformları için mobil uygulamalar geliştiriyorum.
-                  Tek kod tabanıyla her iki platformda çalışan, performanslı ve modern mobil deneyimler sunuyorum.
+                  <strong>Mobil uygulama yaptırmak</strong> isteyenlere tek kod tabanıyla her iki platformda çalışan, yüksek performanslı dijital ürünler teslim ediyorum.
                 </p>
                 <p>
                   Aynı zamanda e-ticaret ve SEO uzmanlığı yapıyorum.
