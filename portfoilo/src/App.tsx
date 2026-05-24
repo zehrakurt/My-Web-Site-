@@ -471,7 +471,27 @@ function App() {
           <div className="container">
             <h2 className="section-title">Projelerim</h2>
             <div className="projects-grid">
-
+              <div className="project-card">
+                <div className="project-content">
+                  <h3>Çevremis</h3>
+                  <p>
+                    Next.js ve React ile geliştirilmiş modern bir e-ticaret sitesi. TypeScript, Tailwind CSS ve App Router kullanarak responsive ve SEO dostu bir yapı oluşturdum. Dinamik kategori ve ürün sayfaları, admin paneli, Formspree ile entegre iletişim formları ve Firebase ile veri yönetimi geliştirdim. Lucide React, Framer Motion ve Swiper gibi kütüphanelerle zengin UI/UX deneyimi sağladım.
+                  </p>
+                  <div className="project-tech">
+                    <span className="tech">Next.js</span>
+                    <span className="tech">Tailwind Css</span>
+                    <span className="tech">Typescript</span>
+                  </div>
+                  <div className="project-links">
+                    <a href="https://cevremis.com/" target="_blank">
+                      <i className="fas fa-external-link-alt"></i> Canlı Demo
+                    </a>
+                    <a href="https://github.com/zehrakurt/cevremis.git" target="_blank">
+                      <i className="fab fa-github"></i> Kaynak Kod
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div className="project-card">
                 <div className="project-content">
                   <h3>Doliva Çikolata</h3>
