@@ -339,20 +339,27 @@ function App() {
               <div className="about-text">
                 <h3>Ben Kimim?</h3>
                 <p>
-                  Ben Zehra Kurt. Only JS Akademi'de Full Stack eğitimi aldım. Hem front-end hem
-                  back-end tarafında güzel ve işlevsel web uygulamaları geliştirmeye odaklanıyorum.
-                </p>
-                <p>
-                  Web geliştirme yolculuğuma Full Stack eğitimiyle başladım. İster kurumsal web siteleri, ister gelişmiş e-ticaret platformları olsun, <strong>web sitesi yaptırmak</strong> isteyen müşterilerime uçtan uca modern yazılım çözümleri sunuyorum.
-                </p>
-                <p>
-                  React Native ile iOS ve Android platformları için mobil uygulamalar geliştiriyorum.
-                  <strong>Mobil uygulama yaptırmak</strong> isteyenlere tek kod tabanıyla her iki platformda çalışan, yüksek performanslı dijital ürünler teslim ediyorum.
-                </p>
-                <p>
-                  Aynı zamanda e-ticaret ve SEO uzmanlığı yapıyorum.
-                </p>
+                  Merhaba, ben Zehra Kurt. Only JS Akademi'de Full Stack Web Geliştirme eğitimi aldım. Hem front-end hem de back-end teknolojilerini kullanarak modern, performanslı ve kullanıcı odaklı web uygulamaları geliştiriyorum.
 
+Yazılım geliştirme yolculuğuma Full Stack eğitimiyle başladım ve bu süreçte farklı sektörlere yönelik birçok proje geliştirme fırsatı buldum. Kurumsal web sitelerinden gelişmiş e-ticaret platformlarına kadar geniş bir yelpazede hizmet veriyorum. Müşterilerimin ihtiyaçlarını analiz ederek tasarım, geliştirme, entegrasyon ve yayına alma süreçlerinin tamamını uçtan uca yönetiyorum.
+
+Web geliştirme alanında React, JavaScript, TypeScript, HTML, CSS, SCSS ve modern yazılım teknolojileriyle çalışıyorum. Kullanıcı deneyimini ön planda tutan, hızlı, ölçeklenebilir ve sürdürülebilir projeler geliştirmeyi hedefliyorum.
+
+Mobil uygulama geliştirme tarafında ise React Native kullanarak hem iOS hem de Android platformlarında çalışan uygulamalar geliştiriyorum. Tek kod tabanı ile iki farklı platform için yüksek performanslı, kullanıcı dostu ve maliyet avantajı sağlayan mobil çözümler sunuyorum.
+                </p>
+                <p><h3>E-Ticaret Uzmanlığı</h3>
+
+Yazılım geliştirme deneyimimin yanı sıra e-ticaret alanında da aktif olarak çalışıyorum. Trendyol, Hepsiburada, N11, Amazon, ÇiçekSepeti ve diğer pazaryerlerinde mağaza yönetimi süreçlerini yürütüyorum. Ürün yükleme, kategori optimizasyonu, varyant yönetimi, stok takibi, fiyat güncellemeleri, kampanya oluşturma ve satış performansı analizleri konusunda deneyim sahibiyim.
+
+Pazaryeri entegrasyon sistemleri ile çalışarak sipariş, stok ve ürün yönetim süreçlerini merkezi olarak yönetebiliyorum. Ayrıca ERP, muhasebe ve entegrasyon programları üzerinden sipariş akışlarının takibi, faturalandırma süreçleri ve operasyonel süreçlerin yönetimi konusunda bilgi sahibiyim. E-ticaret operasyonlarının teknik ve ticari taraflarını birlikte değerlendirerek işletmelerin satış performansını artırmaya yönelik çözümler sunuyorum.
+</p>
+           <p>   <h3>  SEO ve Dijital Görünürlük</h3>
+
+SEO alanında web sitelerinin ve e-ticaret mağazalarının organik görünürlüğünü artırmaya yönelik çalışmalar yürütüyorum. Anahtar kelime araştırması, teknik SEO analizleri, site içi SEO optimizasyonları, içerik stratejileri, meta etiket düzenlemeleri, URL yapılandırmaları ve performans iyileştirmeleri konularında çalışmalar gerçekleştiriyorum.
+
+Arama motorlarının güncel kriterlerini takip ederek web sitelerinin Google sıralamalarında daha görünür hale gelmesine katkı sağlıyorum. Özellikle e-ticaret sitelerinde kategori, ürün ve içerik sayfalarının SEO uyumlu şekilde yapılandırılması, kullanıcı deneyiminin geliştirilmesi ve dönüşüm oranlarının artırılması üzerine çalışmalar yapıyorum.
+
+Teknik altyapı bilgim ile dijital pazarlama deneyimimi birleştirerek müşterilerime yalnızca bir web sitesi değil, aynı zamanda satış ve marka büyümesini destekleyen dijital çözümler sunuyorum.</p>
                 <div className="skills">
                   <span className="skill">HTML5</span>
                   <span className="skill">CSS3</span>
