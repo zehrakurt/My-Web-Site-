@@ -543,22 +543,24 @@ Teknik altyapı bilgim ile dijital pazarlama deneyimimi birleştirerek müşteri
                 </div>
               </div>
 
-              <div className="project-card">
+          <div className="project-card">
                 <div className="project-content">
-                  <h3>FitCart E-Commerce</h3>
+                  <h3>Kuisscarf E-Commerce</h3>
                   <p>
-                    Sporcu gıdaları ve vitamin satışı için tasarlanmış kapsamlı bir B2C e-ticaret web uygulamasıdır. İçerisinde güvenli üyelik sistemi, detaylı ürün filtreleme, varyantlı (aroma/boyut) sepet yönetimi ve müşteri yorumları gibi gerçek dünya senaryolarına uygun gelişmiş e-ticaret akışları barındırmaktadır.
+                    Lüks ve premium şal modelleri satışı için geliştirilmiş, modern kullanıcı arayüzüne sahip B2C e-ticaret web uygulamasıdır. Dinamik ürün kataloğu, gelişmiş varyant (renk/desen) yönetimi, Firebase Storage tabanlı admin paneli ve NestJS/PostgreSQL destekli arka uç mimarisine sahiptir. Satın alım süreçlerini kolaylaştırmak adına Shopier ve Dolap mağaza profilleriyle entegre çalışan optimize edilmiş bir sepet yönlendirme akışı barındırır.
                   </p>
                   <div className="project-tech">
-                    <span className="tech">React</span>
+                    <span className="tech">Next.js</span>
                     <span className="tech">TypeScript</span>
-                    <span className="tech">Tailwind CSS</span>
+                    <span className="tech">NestJS</span>
+                    <span className="tech">PostgreSQL</span>
+                    <span className="tech">Firebase</span>
                   </div>
                   <div className="project-links">
-                    <a href="https://nutrition61.netlify.app/" target="_blank">
+                    <a href="https://kuisscarf.com.tr/" target="_blank">
                       <i className="fas fa-external-link-alt"></i> Canlı Demo
                     </a>
-                    <a href="https://github.com/zehrakurt/final-project.git" target="_blank">
+                    <a href="https://github.com/zehrakurt/kuisscarf.git" target="_blank">
                       <i className="fab fa-github"></i> Kaynak Kod
                     </a>
                   </div>
